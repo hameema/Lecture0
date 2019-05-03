@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+
+{%block title%}error page{%endblock%}
+
+{%block heading %}
+error
+{%endblock%}
+
+{%block body%}
+<h3>{{message}}</h3>
+<a href="{{url_for('index')}}"></a>
+{%endblock%}

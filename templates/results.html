@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    results
+{% endblock %}
+
+{% block heading %}
+  <div class="container">
+    results
+    <a href="{{url_for('index')}}"></a>
+  </div>
+{% endblock %}
+
+{% block body %}
+  <ul>
+    {%for book in books%}
+      <li>
+          {{book.isbn}}, {{book.title}}, {{book.author}}, {{book.year}}.
+      </li>
+      {%endfor%}
+  </ul>
+{% endblock %}

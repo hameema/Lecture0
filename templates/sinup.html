@@ -1,0 +1,23 @@
+{% extends "layout.html"%}
+{%block heading%}
+sinup page
+{%endblock%}
+{%block body%}
+<div class="container">
+      <div class="row" style="margin-top: 40px">
+          <div class="col-sm-6">
+              <form method="POST">
+                  <div class="form-group">
+                    <label for="email">Username : </label>
+                    <input type="text" name="username" class="form-control" id="username">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Password : </label>
+                    <input type="password" name="password" class="form-control" id="password">
+                  </div>
+                  <button type="submit" class="btn form-control btn-default">sinup</button>
+              </form>
+          </div>
+      </div>
+</div>
+{%endblock%}
